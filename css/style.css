@@ -4,11 +4,17 @@
 
 header {
     position: relative;
+    height: 50px; /* щоб нав меню залишалось при скролі */
 }
 
 nav {
-    height: 50px;
+    position: fixed; /* щоб нав меню залишалось при скролі */
+    height: 50px; 
+    width: 100%; /* щоб нав меню залишалось при скролі */
     background-color: #212121;
+    top: 0;
+    z-index: 2; /* Щоб мати вищий z-index і не перекривати інші елементи */
+                /* щоб нав меню залишалось при скролі */ 
 }
 
 .menu {
@@ -40,6 +46,7 @@ nav {
     width: 100%;
     height: 84px;
     background-color: rgba(0,0,0, .6);
+    margin-top: 50px; /* щоб нав меню залишалось при скролі, ставимо mt50px щоб зробити відступ на       висоту нав меню*/
 }
 
 .subheader .subheader_logo {
@@ -139,4 +146,74 @@ nav {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.reasons {
+    padding: 20px 0 65px 0;
+    /* padding: 20px 0 65px 0;
+    min-height: 767px;
+    width: 1140px; 
+    */
+
+    /* чому при додаванні розмірів ламається верстка ? */
+}
+
+.label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+    width: 113px;
+    height: 24px;
+    background-color: black;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.reasons_title {
+    margin-bottom: 0;
+    margin-top: 38px;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reasons .reasons_block {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reasons .reasons_block .reasons_around {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1eacc7;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+    font-weight: 300;
+    font-size: 15px;
+    color: #202020;
+    line-height: 21px;
 }
