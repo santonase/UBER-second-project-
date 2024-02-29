@@ -371,6 +371,7 @@ nav
     font-weight: 400
     text-transform: uppercase    
     margin-top: 466px
+
 footer
   min-height: 133px
   padding: 11px 21px 11px 21px
@@ -381,24 +382,72 @@ footer
   &_divider
     background-color: #1FBAD6
     width: 301px
-    height: 7px
+    height: 4px
     margin: 0 auto
+  &_wrapper
+    display: flex 
+    justify-content: space-between
+    align-items: flex-start 
+    padding-top: 32px
+  &_wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
   &_social
+    width: 160px
     display: flex
+    justify-content: space-between
     &_item
       display: flex
       justify-content: center
       align-items: center
-      color: #fff
-      background-color: #000
+      margin: 0 auto
       width: 35px
       height: 35px
+      background-color: #000
+      color: #fff
       border-radius: 100%
-      margin: 48px 3px 72px
+    a
+      text-decoration: none
   &_links
     width: 390px
     margin: 0 auto
     &_main
       display: flex
       justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        text-decoration: none
+        font-weight: 300
+        text-transform: uppercase
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin: 15px auto
+      a
+        color: #999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_lang
+      display: block
+      text-align: center
+      color: #1fbad6
+      text-decoration: none
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      margin: 18px auto
+
+
+  &_mobile
+    img
+      width: 120px
+      height: 40px
+      
+ 
        
